@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*, *::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(250, 250, 250);
+    
+}
+
+.resize-button {
+  position: absolute;
+  z-index: 1;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+}
+
+.full-page-image-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); /* Background with opacity for blur effect */
+  z-index: 1000;
+}
+
+.full-page-image {
+  position: relative;
+}
+
+.full-page-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  
+  border: none;
+
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+
+.login-bg{
+  background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%2318051a' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%231d1020' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%23241727' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%232c1e2f' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23332536' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #f8a15a;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+
+.expand{
+  display: none;
+   transition: display 200ms ease;
+ 
+ }
+ .react-pdf__Page__textContent.textLayer {
+  display: none;
+}
+ .rotate {
+  transform: rotate(-180deg);
+  transition: transform 400ms ease;
+}
+.rotate-alt {
+  transform: rotate(0deg);
+  transition: transform 400ms ease;
+}
+
+
+
+
+
+.before-box::before{
+content:"";
+background: #1C1943 ;
+height:100%;
+width:100%;
+z-index:-99;
+position: absolute;
+}
+
+
+
+
+
+
+.filehide{
+  display:none;
+}
+.table{
+  display: block;
+    white-space: nowrap;
+  }
+
+.borderradiusformtop{
+  border-radius: 10px 10px 0 0;
+}
+.sidebar ul li:hover span{
+    margin-left: 5px;
+}
